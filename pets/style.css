@@ -78,13 +78,10 @@ h6 {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  /*border: 2px solid rgb(212, 14, 14);*/
 }
 .header {
   background-color: #ffffff;
   height: 120px;
-}
-.wrapper {
 }
 .header__container {
   display: flex;
@@ -104,8 +101,6 @@ h6 {
   display: flex;
   align-items: center;
   letter-spacing: 0.06em;
-}
-.header__logo-title a {
   color: #545454;
 }
 .header__logo-subtitle {
@@ -143,6 +138,9 @@ h6 {
   font-weight: 400;
   margin-right: 35px;
   position: relative;
+}
+.header__link a:hover {
+  color: #292929;
 }
 .header__link a {
   font-size: 15px;
@@ -186,6 +184,15 @@ h6 {
   border-radius: 9px;
   margin-bottom: 30px;
 }
+.main__item:hover {
+  /*background-color: #a82929;*/
+  background-color: #fff;
+}
+
+.main__item:hover > .main__item-button {
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
+}
 .main__item-img {
   height: 270px;
   border-radius: 9px 9px 0px 0px;
@@ -219,10 +226,10 @@ h6 {
   background: #ffffff;
   transition: all 0.5s ease;
 }
-.main__item-button:hover {
+/*.main__item-button:hover {
   background: #fddcc4;
   border: 2px solid #fddcc4;
-}
+}*/
 .main__buttons {
   width: 340px;
   margin-top: 30px;
@@ -254,16 +261,15 @@ h6 {
   color: #292929;
 }
 .next {
-   border: 2px solid #F1CDB3;
-   background: inherit;
-   color: #292929;
+  border: 2px solid #f1cdb3;
+  background: inherit;
+  color: #292929;
 }
-.next:hover{
-   background: #FDDCC4;
-   border: 2px solid #FDDCC4;
+.next:hover {
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
 }
 .footer {
-  padding-left: 12px;
   height: 350px;
   background: url(../main/img/footer-gradient-background.png),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
@@ -308,8 +314,6 @@ h6 {
 .footer__content span {
   display: inline-block;
   line-height: 23px;
-  /*margin-left: 20px;*/
-
   color: #f1cdb3;
 }
 .footer__content img {

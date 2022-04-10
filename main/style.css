@@ -75,13 +75,12 @@ h6 {
 }
 /*--------------------*/
 html {
-   scroll-behavior: smooth;
- }
+  scroll-behavior: smooth;
+}
 .wrapper {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  /*border: 2px solid rgb(212, 14, 14);*/
 }
 .header__container {
   position: relative;
@@ -91,11 +90,11 @@ html {
   justify-content: space-between;
   height: 60px;
 }
-.header__logo {
+/*.header__logo {
   padding-top: 2px;
   padding-left: 9px;
-}
-.header__logo_title {
+}*/
+.header__logo_title{
   cursor: pointer;
   font-family: "Georgia";
   font-style: normal;
@@ -105,9 +104,8 @@ html {
   color: rgba(241, 205, 179, 1);
   letter-spacing: 0.06em;
 }
-.header__logo_subtitle {
+.header__logo_subtitle{
   padding-top: 10px;
-  padding-left: 3px;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -118,7 +116,6 @@ html {
 }
 .header__nav {
   display: flex;
-  margin-right: -5px;
   height: 24px;
 }
 .header__link a {
@@ -127,6 +124,9 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
+}
+.header__link a:hover {
+  color: #fafafa;
 }
 .header__link {
   height: 24px;
@@ -151,7 +151,7 @@ html {
 }
 
 .main {
-  width: 100vw;
+  /*width: 100vw;*/
   height: 908px;
   background: url(../main/img/start-screen-gradient-background.png);
   background-size: cover;
@@ -186,8 +186,8 @@ html {
   color: rgba(196, 196, 196, 1);
 }
 .main__button {
-   display: block;
-   cursor: pointer;
+  display: block;
+  cursor: pointer;
   margin-top: 42px;
   width: 207px;
   height: 52px;
@@ -202,8 +202,8 @@ html {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.main__button:hover{
-   background: #FDDCC4;
+.main__button:hover {
+  background: #fddcc4;
 }
 .main__foto {
   padding-top: 180px;
@@ -233,7 +233,7 @@ html {
   object-fit: contain;
 }
 .about__info {
-  margin-left: 120px;
+  margin-left: 110px;
 }
 .about__title {
   margin-top: 92px;
@@ -259,7 +259,7 @@ html {
 .friends {
   background: #f6f6f6;
   height: 877px;
-  margin-left: 15px;
+  /*margin-left: 15px;*/
 }
 .wrapper {
 }
@@ -290,19 +290,18 @@ html {
   width: 52px;
   height: 52px;
   border-radius: 100%;
-  border: 2px solid #FDDCC4;
+  border: 2px solid #fddcc4;
   background-image: url(./img/icon/Arrow.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: all 0.3s ease;
-
 }
 .friends__slider__button-left:hover {
-   cursor: pointer;
-   background: #FDDCC4;
-   background-image: url(./img/icon/Arrow.png);
-   background-repeat: no-repeat;
-   background-position: 50% 50%;
+  cursor: pointer;
+  background: #fddcc4;
+  background-image: url(./img/icon/Arrow.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .friends__slider__items {
   align-items: center;
@@ -311,17 +310,21 @@ html {
   gap: 90px;
 }
 .friends__slider__item {
-  background-color: #fff;
+  background-color: #fafafa;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .friends__slider__item:hover {
-
-
+  /*background-color: #a82929;*/
+  background-color: #fff;
+ 
 }
 
-.friends__slider__item-img {
-
+.friends__slider__item:hover > .friends__slider__item-button {
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
 }
+
 .friends__slider__item-name {
   margin-top: 30px;
   font-family: "Georgia";
@@ -350,34 +353,29 @@ html {
   background: #ffffff;
   transition: all 0.5s ease;
 }
-.friends__slider__item-button:hover{
-   background: #FDDCC4;
-   border: 2px solid #FDDCC4;
-   /*border: none;*/
-}
+
 .friends__slider__button-right {
   margin-top: 192px;
   width: 52px;
   height: 52px;
   border-radius: 100%;
-  border: 2px solid #FDDCC4;
+  border: 2px solid #fddcc4;
   background-image: url(./img/icon/Arrow.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: all 0.3s ease;
   transform: rotate(180deg);
-
 }
 .friends__slider__button-right:hover {
-   cursor: pointer;
-   background: #FDDCC4;
-   background-image: url(./img/icon/Arrow.png);
-   background-repeat: no-repeat;
-   background-position: 50% 50%;
+  cursor: pointer;
+  background: #fddcc4;
+  background-image: url(./img/icon/Arrow.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .friends__button {
-   display: block;
-   cursor: pointer;
+  display: block;
+  cursor: pointer;
   width: 261px;
   height: 52px;
   background: #f1cdb3;
@@ -393,8 +391,8 @@ html {
   margin: 60px auto 0;
   transition: all 0.3s ease;
 }
-.friends__button:hover{
-   background: #FDDCC4;
+.friends__button:hover {
+  background: #fddcc4;
 }
 .help {
   /*margin-top: 80px;*/
@@ -409,7 +407,7 @@ html {
   padding-top: 80px;
   height: 90px;
   width: 325px;
-  padding-left: 15px;
+  /*padding-left: 15px;*/
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -428,7 +426,7 @@ html {
   flex-wrap: wrap;
   width: 1040px;
   height: 281px;
-  padding-left: 14px;
+  /*padding-left: 14px;*/
   margin-top: 140px;
   margin-left: auto;
   margin-right: auto;
@@ -471,7 +469,7 @@ html {
 .wrapper {
 }
 .addition__container {
-   margin-top: 80px;
+  margin-top: 80px;
   display: flex;
 }
 .addition__img {
@@ -481,7 +479,7 @@ html {
 }
 .addition__content {
   margin-top: 80px;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 .addition__title {
   width: 300px;
@@ -551,7 +549,6 @@ html {
   color: #b2b2b2;
 }
 .footer {
-  padding-left: 12px;
   height: 350px;
   background: url(./img/footer-gradient-background.png),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
@@ -596,10 +593,10 @@ html {
   margin-top: 51px;
 }
 .footer__content span {
-   display: inline-block;
-   line-height: 23px;
+  display: inline-block;
+  line-height: 23px;
   /*margin-left: 20px;*/
-  
+
   color: #f1cdb3;
 }
 .footer__content img {
